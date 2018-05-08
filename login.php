@@ -2,16 +2,34 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
         <title>CSRF Demo</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
     </head>
-    <body>
-        <form action="login.php" method="POST" >
-            Username : <input type="text" id="uname" name="uname"><br><br>
-            Password : <input type="password" id="pass" name="pass"><br><br>
+    <body style="background-image: url('images/LoginPage2.jpg'); color: white; background-size: cover; ">
+        <div class="container" style="margin-top: 100px">
+        <div class="row justify-content-center">
+        <div class="col-md-6 col-offset-3" align="center">
             
-            <input type="submit" value="Login" id="submit" name="submit">
+            <form action="login.php" method="POST" >
+                Username : <input type="text" id="uname" name="uname" placeholder="Username" class="form-control"><br>
+                Password : <input type="password" id="pass" name="pass" placeholder="Password" class="form-control"><br>
             
-        </form>
+                <input type="submit" value="Login" id="submit" name="submit" class="btn btn-info">
+            
+            </form>
+        </div>
+        </div>
+        </div>
         
     </body>
 </html>
